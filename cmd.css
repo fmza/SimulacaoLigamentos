@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Cor de fundo preto */
+    color: #00FF00; /* Cor do texto verde */
+    font-family: "Courier New", monospace;
+}
+
+.cmd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    outline: 1px dotted rgb(37, 37, 37);
+    outline-offset: -4px;
+    background: hsl(106, 100%, 37%);
+    box-shadow: inset -1px -1px #292929, inset 1px 1px #7bff00, inset -2px -2px rgb(0, 255, 55), inset 2px 2px #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+  
+  button:active {
+    box-shadow: inset -1px -1px #33ff00, inset 1px 1px #292929, inset -2px -2px #33ff00, inset 2px 2px rgb(158, 158, 158);
+  }

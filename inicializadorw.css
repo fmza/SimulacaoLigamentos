@@ -1,0 +1,32 @@
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('windows-logo.png'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o corpo */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilo para o loader (animação de carregamento) */
+.loader {
+    border: 10px solid #3498db; /* Cor do loader */
+    border-top: 10px solid #ffffff; /* Cor do topo do loader (pode ser a mesma do fundo da página) */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite; /* Animação de rotação */
+    position: absolute;
+    top: 60%; /* Ajusta a posição vertical abaixo do centro */
+    left: 51,2%; /* Ajusta a posição horizontal à esquerda */
+    transform: translate(-50%, -50%); /* Centraliza o loader */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

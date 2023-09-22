@@ -1,0 +1,125 @@
+body {
+    font-family: Consolas, monospace;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.terminal {
+    background-color: #111;
+    border: 2px solid #666;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #333;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.red-circle, .yellow-circle, .green-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.red-circle {
+    background-color: #FF5555;
+}
+
+.yellow-circle {
+    background-color: #FFBB33;
+}
+
+.green-circle {
+    background-color: #44DD44;
+}
+
+.content {
+    padding: 16px;
+    color: #DDD;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+code {
+    color: #0FE20F;
+}
+
+
+.button-container {
+    position: relative; /* Posicionamento relativo para conter todo o conteúdo */
+}
+
+.button {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    border: 3px solid #0FE20F;
+    background-color: #0FE20F;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+    position: absolute; /* Posicionamento absoluto para o botão */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+}
+
+.text {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.arrow path {
+    fill: rgb(19, 19, 19);
+}
+
+.button:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-8px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.button:active {
+    transform: scale(0.97);
+}
